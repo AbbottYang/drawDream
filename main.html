@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dream drawing</title>
+<style type="text/css">
+
+/*网页链接去下划线*/
+a:link {
+	color:#E7F0EA;
+ text-decoration: none;
+}
+a:visited {
+	color:#000000;
+ text-decoration: none;
+}
+a:hover {color:#E7F0EA;
+ text-decoration: none;
+}
+a:active {color:#E7F0EA;
+ text-decoration: none;
+}
+
+        h1{
+         font-size:30px;
+          color:#930;
+          text-align:center;
+
+        }
+		p100{
+			color:#AD6C6D;
+			
+		}
+		p2{    /*嵌套在p100内*/
+			float:right
+		}
+		p1{
+			font-size:50px;
+			color:rgba(243,243,243,1.00);
+			 text-align:center;
+		}
+        body p100 {
+}
+div#div3{
+	position: absolute;
+	top: 0px;
+	left: -3px;
+	bottom: 500px;
+	right: 0px;
+	z-index: -1;
+	/*width: 1368px;*/
+	box-shadow: 2px 2px 2px rgba(110,110,110,1.00);
+} 
+div#div3 > img { 
+height:100%; 
+width:100%; 
+border:0; 
+} 
+div#div4{
+	position: absolute;
+	top: 154px;
+	left: 0px;
+	bottom: 1;
+	
+	z-index: -1;
+} 
+
+#ad{
+	position: absolute;
+	top: 474px;
+	font-size:24px;
+	filter:dropshadow(corlor:#A66364);
+	width:100%;
+	color:rgba(0,0,0,1.00);
+	line-height:150%;
+	
+	padding-left:50px;
+	font-family:"华文行楷";
+}
+@-webkit-keyframes fadeInOut {
+    0% {
+        opacity:0;
+     }
+    25% {
+        opacity:1;
+    }
+    75% {
+        opacity: 1;    
+    }
+    100% {
+        opacity:0;
+    }
+}
+div#div4 > img { 
+height:100%; 
+width:100%; 
+border:0; 
+    -webkit-animation-name: fadeInOut;
+    -webkit-animation-timing-function:ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-direction: alternate;
+} 
+        p1 {
+	font-family: Cambria, Hoefler Text, Liberation Serif, Times, Times New Roman, serif;
+}
+
+</style>
+
+<!-- TemplateParam name="OptionalRegion1" type="boolean" value="true" -->
+</head>
+
+<body>
+
+
+  <div id="div3"><img src="c5d435704fd69780f741a2613b85bd.jpg" width="220" height="137" alt=""/></div>
+  <p1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WELCOME TO DREAM DRAWING</p1>
+  <p>&nbsp;</p>
+  
+  <p100>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="main.html" tabindex="1" title="" accesskey="s" ><strong>首页</strong></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="drawing.html" tabindex="1" title="画师介绍" accesskey="a" ><strong>画师</strong></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="painting.html" tabindex="1" title="精彩作品" accesskey="p" ><strong>作品</strong></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="appointment.html" tabindex="1" title="发布需求" accesskey="n" ><strong>约稿</strong></a>
+  <p2>
+  <a href="login.html" tabindex="1" title="用户名登陆" accesskey="l" ><strong>登陆</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="regist.html" tabindex="1" title="新用户注册" accesskey="r" ><strong>注册</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </p2>
+  </p100>
+  
+  <div id="ad"> 
+    脑海中一瞬即过的你<br>
+    光彩斑斓，是好若坏<br>
+    君の名は...<br>
+    这算什么，不是说好玩捉迷藏吗?<br>
+    那么我们没找到你，又怎么能算结束<br>
+    有绘梦<br>
+    我们终知道那天所看见的花的名字 </div>
+    
+    
+  <p><br/>
+  </p>
+<!--
+<div id="div2"><img src="5877343335fd2.jpg" width="1920" height="200" alt=""/></div>
+<div id="button1">
+<form id="button" autocomplete="on">
+<input type="button" value="更改外观" onClick="modify()"/>
+</form>
+</div>-->
+
+
+
+<div id="div4">
+<script language ="javascript" >
+var curIndex=0;
+//时间间隔(单位毫秒)，每秒钟显示一张，数组共有5张图片放在Photos文件夹下。
+var timeInterval=10000;
+var arr=new Array();
+arr[0]="abbfa4596644c19ae5647c507b2938f8.jpg";
+arr[1]="7d9522bc7dd3227b2773a03515a053e7.jpg";
+arr[2]="5877343335fd2.jpg";
+arr[3]="91289470d6706e37c9.jpg";
+setInterval(changeImg,timeInterval);
+function changeImg()
+{
+    var obj=document.getElementById("obj");
+    if (curIndex==arr.length-1) 
+    {
+        curIndex=0;
+    }
+    else
+    {
+        curIndex+=1;
+    }
+    obj.src=arr[curIndex];
+}
+</script>
+<img id="obj" src ="abbfa4596644c19ae5647c507b2938f8.jpg" width="1920" height="1200" >
+</div>
+</body>
+</html>
